@@ -10,10 +10,10 @@ from app.schemas.user import UserRead
 # Base Schema shared by creation/update
 class TaskBase(BaseModel):
     title: str
-    description: Optional[str]
+    description: Optional[str] = None
     priority: int = 1
     completed: bool = False
-    due_date: Optional[datetime]
+    due_date: Optional[datetime] = None
 
 
 # Schema for creating a task
