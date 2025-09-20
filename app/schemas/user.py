@@ -2,6 +2,7 @@ from pydantic import BaseModel, EmailStr
 from uuid import UUID
 from datetime import datetime
 from typing import Optional, List
+from app.schemas.task import TaskRead
 
 
 # Base schema (shared fields)
